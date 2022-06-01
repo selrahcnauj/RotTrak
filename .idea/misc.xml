@@ -5,11 +5,13 @@
       <map>
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1425" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/drawable/ic_tips_black_24dp.xml" value="0.1425" />
-        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/activity_login.xml" value="0.5" />
-        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/activity_main.xml" value="0.12" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/activity_splash_login.xml" value="0.18" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_account.xml" value="0.1" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_cart.xml" value="0.1" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_notifications.xml" value="0.153125" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_tips.xml" value="0.1" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
       </map>
@@ -20,5 +22,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.5" />
+      </ProjectState>
+    </option>
   </component>
 </project>

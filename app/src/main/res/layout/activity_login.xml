@@ -28,11 +28,28 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|center_vertical"
-                android:text="Log-in" />
+                android:text="@string/log_in"
+                android:textAppearance="@style/header" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogIn"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                app:icon="@drawable/ic_arrow_right"
+                app:iconPadding="0dp"
+                app:iconSize="24dp"
+                app:shapeAppearance="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded"/>
+
+
         </LinearLayout>
 
     </LinearLayout>

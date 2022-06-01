@@ -9,4 +9,9 @@
     <string name="title_activity_splash_login">SplashLoginActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="log_in">Log-in</string>
+    <string name="list_name">My List</string>
+    <string name="txt_title_tips">Tips</string>
+    <string name="txt_title_cart">My Cart</string>
+    <string name="txt_title_account">My Account</string>
 </resources>
