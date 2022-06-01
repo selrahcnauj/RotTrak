@@ -5,7 +5,9 @@
       <map>
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1425" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/drawable/ic_tips_black_24dp.xml" value="0.1425" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/activity_login.xml" value="0.5" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/activity_main.xml" value="0.12" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/activity_splash_login.xml" value="0.18" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_account.xml" value="0.1" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_cart.xml" value="0.1" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_tips.xml" value="0.1" />
