@@ -6,16 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment"
     android:orientation="vertical"
-    android:paddingLeft="20dp"
-    android:paddingRight="20dp"
     android:paddingTop="35dp"
     android:id="@+id/linearBG">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="3dp">
 
         <TextView
             android:id="@+id/header"
@@ -27,18 +28,44 @@
             android:textAppearance="@style/header" />
 
         <ImageButton
-            android:id="@+id/imageButton"
-            android:padding="6dp"
+            android:id="@+id/btnNotifications"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#00FFFFFF"
+            android:padding="6dp"
             android:scaleType="fitCenter"
             android:src="@drawable/ic_notifications_black_24dp"
             tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
 
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="3dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="3dp"
+        app:checkedChip="@id/chip4"
+        app:singleLine="true"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uncategorized" />
+    </com.google.android.material.chip.ChipGroup>
+
     <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/rv_expiry_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

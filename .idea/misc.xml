@@ -5,15 +5,22 @@
       <map>
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1425" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/drawable/ic_tips_black_24dp.xml" value="0.1425" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/drawable/layout_bottom_nav_bar.xml" value="0.1635" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/drawable/layout_list_item.xml" value="0.1" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/drawable/layout_list_item_category_rounded.xml" value="0.1635" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/activity_splash_login.xml" value="0.18" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/expiry_list_category.xml" value="0.15208333333333332" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/expiry_list_item.xml" value="0.5" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_account.xml" value="0.1" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_cart.xml" value="0.1" />
-        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_notifications.xml" value="0.153125" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_tips.xml" value="0.1" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>
     </option>
   </component>
