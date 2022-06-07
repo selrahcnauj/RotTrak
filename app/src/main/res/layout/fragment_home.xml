@@ -7,7 +7,8 @@
     tools:context=".ui.home.HomeFragment"
     android:orientation="vertical"
     android:paddingTop="35dp"
-    android:id="@+id/linearBG">
+    android:id="@+id/linearBG"
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,42 +32,105 @@
             android:id="@+id/btnNotifications"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#00FFFFFF"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:backgroundTint="#00FFFFFF"
             android:padding="6dp"
             android:scaleType="fitCenter"
             android:src="@drawable/ic_notifications_black_24dp"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     </LinearLayout>
 
-    <com.google.android.material.chip.ChipGroup
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="20dp"
-        android:paddingTop="3dp"
-        android:paddingRight="20dp"
-        android:paddingBottom="3dp"
-        app:checkedChip="@id/chip4"
-        app:singleLine="true"
-        app:singleSelection="true">
+        android:scrollbars="none">
 
-        <com.google.android.material.chip.Chip
-            android:id="@+id/chip4"
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="3dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="3dp"
+            app:checkedChip="@id/chip4"
+            app:singleLine="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:textAppearance="@style/ChipCategoryFont"
+                style="@style/Widget.App.Chip"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip5"
+                style="@style/Widget.App.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFE5FFE0"
+                android:backgroundTint="#FFE5FFE0"
+                android:text="Uncategorized"
+                android:textAppearance="@style/ChipCategoryFont"
+                android:textColor="#FF737373" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip6"
+                style="@style/Widget.App.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fruits &amp; Vegetables"
+                android:textAppearance="@style/ChipCategoryFont"
+                android:textColor="#FF54A52D" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip7"
+                style="@style/Widget.App.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beverages"
+                android:textAppearance="@style/ChipCategoryFont"
+                android:textColor="#A52D99" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip8"
+                style="@style/Widget.App.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Live Stock"
+                android:textAppearance="@style/ChipCategoryFont"
+                android:textColor="#FFA5512D" />
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/ListTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="All" />
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/chip5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Uncategorized" />
-    </com.google.android.material.chip.ChipGroup>
+            android:layout_weight="1"
+            android:text="Freshness" />
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
 
         android:id="@+id/rv_expiry_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:fastScrollEnabled="true"
+        android:fastScrollAlwaysVisible="true"/>
 
 </LinearLayout>

@@ -9,7 +9,8 @@
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
     android:paddingTop="35dp"
-    android:id="@+id/linearBG">
+    android:id="@+id/linearBG"
+    android:background="@color/white">
 
     <TextView
         android:id="@+id/header"

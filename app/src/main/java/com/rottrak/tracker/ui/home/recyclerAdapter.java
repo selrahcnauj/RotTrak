@@ -61,7 +61,7 @@ public class recyclerAdapter extends RecyclerView.Adapter<recyclerAdapter.MyView
         return itemList.size();
     }
 
-    public interface RecyclerViewClickListener{
+    public interface RecyclerViewClickListener {
         void onClick(View v, int position);
     }
 }

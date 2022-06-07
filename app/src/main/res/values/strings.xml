@@ -15,4 +15,7 @@
     <string name="txt_title_cart">My Cart</string>
     <string name="txt_title_account">My Account</string>
     <string name="txt_title_notifications">Notifications</string>
+    <string name="freshness_expired"><![CDATA[Expired /> </menu>]]></string>
+    <string name="freshness_almost_expired">Almost Expired</string>
+    <string name="freshness_all">All</string>
 </resources>

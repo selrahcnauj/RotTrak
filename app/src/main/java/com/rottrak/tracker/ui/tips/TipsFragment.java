@@ -12,11 +12,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.rottrak.tracker.R;
 
 public class TipsFragment extends Fragment {
 
     private TipsViewModel mViewModel;
+    private FloatingActionButton fab;
 
     public static TipsFragment newInstance() {
         return new TipsFragment();
@@ -25,14 +27,17 @@ public class TipsFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
+        fab = getActivity().findViewById(R.id.fabMain);
+        fab.hide();
+
         return inflater.inflate(R.layout.fragment_tips, container, false);
     }
 
-    @Override
+    /*@Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         mViewModel = new ViewModelProvider(this).get(TipsViewModel.class);
         // TODO: Use the ViewModel
-    }
+    }*/
 
 }

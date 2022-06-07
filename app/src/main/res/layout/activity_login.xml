@@ -7,7 +7,8 @@
     tools:context=".LoginActivity"
     android:orientation="horizontal"
     android:background="@color/white"
-    android:id="@+id/linearBG">
+    android:id="@+id/linearBG"
+    android:padding="20dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +20,9 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_logo_rottrak" />
+            app:srcCompat="@drawable/ic_logo_rottrak"
+            android:contentDescription="rotTrak"
+            android:layout_marginBottom="60dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,21 +36,63 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|center_vertical"
                 android:text="@string/log_in"
-                android:textAppearance="@style/header" />
+                android:textAppearance="@style/header"
+                android:layout_margin="16dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                style="@style/TextInput">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_pw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                app:endIconMode="password_toggle"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical|center_horizontal"
                 android:id="@+id/btnLogIn"
-                style="@style/Widget.MaterialComponents.Button.Icon"
+                style="@style/Widget.Material3.Button.IconButton"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:insetLeft="0dp"
-                android:insetTop="0dp"
-                android:insetRight="0dp"
-                android:insetBottom="0dp"
+                android:contentDescription="@string/log_in"
+                android:backgroundTint="@color/accent_lgreen"
+                app:cornerRadius="100dp"
+
+
                 app:icon="@drawable/ic_arrow_right"
+                app:iconTint="@color/accent_green"
                 app:iconPadding="0dp"
                 app:iconSize="24dp"
-                app:shapeAppearance="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded"/>
+
+                 />
 
 
         </LinearLayout>

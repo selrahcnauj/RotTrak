@@ -19,4 +19,13 @@
         android:gravity="center_vertical"
         android:text="@string/txt_title_notifications"
         android:textAppearance="@style/header" />
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/rv_notifs_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fastScrollEnabled="true"
+        android:fastScrollAlwaysVisible="true"/>
+
 </LinearLayout>
