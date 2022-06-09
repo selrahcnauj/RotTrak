@@ -77,9 +77,11 @@ public class NotificationsFragment extends Fragment {
     }
 
     private void setItemsInfo(){
-        itemList.add(new notifListData("Banana is gonna expire in 3 days!","d","Learn how to prolong your product’s shelf life",""));
-        itemList.add(new notifListData("Milk has spoiled!","d","Do not consume product","d"));
-
+        itemList.add(new notifListData("Banana is gonna expire in 3 days!","d","Learn how to prolong your product’s shelf life",R.drawable.ic_image_banana, false));
+        itemList.add(new notifListData("Milk has spoiled!","d","Do not consume product",R.drawable.ic_image_milkglass, false));
+        itemList.add(new notifListData("Wheat Bread has spoiled","d","Do not consume product",R.drawable.ic_image_bread, true));
+        itemList.add(new notifListData("Wheat Bread is expiring tomorrow!","d","Check your product now",R.drawable.ic_image_bread, true));
+        itemList.add(new notifListData("Garlic has spoiled","d","Do not consume product",R.drawable.ic_image_garlic, true));
     }
     
     @Override

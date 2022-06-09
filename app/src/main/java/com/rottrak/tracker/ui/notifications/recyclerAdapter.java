@@ -8,7 +8,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.rottrak.tracker.R;
-import com.rottrak.tracker.ui.notifications.notifListData;
 
 import java.util.ArrayList;
 
@@ -24,12 +23,19 @@ public class recyclerAdapter extends RecyclerView.Adapter<com.rottrak.tracker.ui
 
     public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         private TextView txt_item_name;
-        private TextView txt_item_date;
+        private TextView txt_item_subtitle;
+        private ImageView red_dot;
+        private ImageView img_item;
+        private LinearLayout layoutParent;
 
         public MyViewHolder(final View view){
             super(view);
             txt_item_name = view.findViewById(R.id.txt_item_title);
-            txt_item_date = view.findViewById(R.id.txt_item_date);
+            txt_item_subtitle = view.findViewById(R.id.txt_item_subtitle);
+            red_dot = view.findViewById(R.id.red_dot);
+            img_item = view.findViewById(R.id.image_item);
+            layoutParent = view.findViewById(R.id.layoutParent);
+            view.setOnClickListener(this);
 
         }
 
@@ -48,12 +54,23 @@ public class recyclerAdapter extends RecyclerView.Adapter<com.rottrak.tracker.ui
 
     @Override
     public void onBindViewHolder(@NonNull com.rottrak.tracker.ui.notifications.recyclerAdapter.MyViewHolder holder, int position) {
+        boolean isRead = itemList.get(position).isStateRead();
+
+        if(isRead){
+            holder.red_dot.setVisibility(View.INVISIBLE);
+            holder.layoutParent.setAlpha((float)0.5);
+        }
+
+        int image = itemList.get(position).getImageUrl();
+
+        holder.img_item.setImageResource(image);
+
         String name = itemList.get(position).getName();
         holder.txt_item_name.setText(name);
 
         String description = itemList.get(position).getDescription();
 
-        holder.txt_item_date.setText(description);
+        holder.txt_item_subtitle.setText(description);
     }
 
     @Override

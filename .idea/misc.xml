@@ -3,25 +3,33 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/drawable/ic_clear_24px_rounded.xml" value="0.1" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1425" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/drawable/ic_tips_black_24dp.xml" value="0.1425" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/drawable/layout_bottom_nav_bar.xml" value="0.1635" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/drawable/layout_list_item.xml" value="0.1" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/drawable/layout_list_item_category_rounded.xml" value="0.1635" />
-        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/activity_login.xml" value="0.1925925925925926" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/drawable/layout_list_item_quantity_rounded.xml" value="0.1" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/drawable/search_rounded.xml" value="0.1" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/activity_item.xml" value="0.1" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/activity_splash_login.xml" value="0.18" />
-        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/dialog_new_item_expiry.xml" value="0.18" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/dialog_item.xml" value="0.22" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/dialog_new_item_expiry.xml" value="0.21" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/dialog_select_category.xml" value="0.25625" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/dialog_tips_item.xml" value="0.22" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/expiry_list_category.xml" value="0.15208333333333332" />
-        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/expiry_list_item.xml" value="0.33" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/expiry_list_item.xml" value="0.22121896162528218" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_account.xml" value="0.1" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_cart.xml" value="0.1" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_dashboard.xml" value="0.14479166666666668" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_notifications.xml" value="0.153125" />
-        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_tips.xml" value="0.1" />
-        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/notifs_list_item.xml" value="0.25" />
-        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/fragment_tips.xml" value="0.25" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/list_grocery_item.xml" value="0.33" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/layout/notifs_list_item.xml" value="0.33" />
+        <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/menu/freshness_selector.xml" value="0.22" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Carlo-PC/Documents/RotTrak/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />

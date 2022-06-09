@@ -74,25 +74,57 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:gravity="center_vertical|center_horizontal"
-                android:id="@+id/btnLogIn"
-                style="@style/Widget.Material3.Button.IconButton"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:contentDescription="@string/log_in"
-                android:backgroundTint="@color/accent_lgreen"
-                app:cornerRadius="100dp"
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLogIn"
+                    style="@style/Widget.Material3.Button.IconButton"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/accent_lgreen"
+                    android:contentDescription="@string/log_in"
+                    android:gravity="center_vertical|center_horizontal"
 
 
-                app:icon="@drawable/ic_arrow_right"
-                app:iconTint="@color/accent_green"
-                app:iconPadding="0dp"
-                app:iconSize="24dp"
+                    app:cornerRadius="100dp"
+                    app:icon="@drawable/ic_arrow_right"
+                    app:iconPadding="0dp"
+                    app:iconSize="24dp"
 
-                 />
+                    app:iconTint="@color/accent_green" />
+
+                <TextView
+                    android:id="@+id/txt_skip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_margin="40dp"
+                    android:gravity="center"
+                    android:text="Skip"
+                    android:textAppearance="@style/LoginText" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Don’t have an account?"
+                android:textAppearance="@style/LoginText" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Signup"
+                android:textAppearance="@style/LoginText"
+                android:textColor="@color/accent_green" />
 
 
         </LinearLayout>

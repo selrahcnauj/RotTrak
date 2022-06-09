@@ -4,17 +4,19 @@ public class notifListData {
     String name;
     String date;
     String description;
-    String imageUrl;
+    int imageUrl;
     boolean isRead;
 
     notifListData(String name,
                   String date,
                   String description,
-                  String imageUrl){
+                  int imageUrl,
+                  boolean isRead){
         this.name = name;
         this.date = date;
         this.description = description;
         this.imageUrl = imageUrl;
+        this.isRead = isRead;
 
     }
 
@@ -26,7 +28,7 @@ public class notifListData {
         return date;
     }
 
-    public String getImageUrl(){
+    public int getImageUrl(){
         return imageUrl;
     }
 

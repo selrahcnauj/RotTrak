@@ -4,7 +4,7 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_tips">Tips</string>
-    <string name="title_cart">Cart</string>
+    <string name="title_cart">Grocery</string>
     <string name="title_account">Account</string>
     <string name="title_activity_splash_login">SplashLoginActivity</string>
     <string name="dummy_button">Dummy Button</string>
@@ -12,10 +12,11 @@
     <string name="log_in">Log-in</string>
     <string name="list_name">My List</string>
     <string name="txt_title_tips">Tips</string>
-    <string name="txt_title_cart">My Cart</string>
+    <string name="txt_title_cart">Grocery List</string>
     <string name="txt_title_account">My Account</string>
     <string name="txt_title_notifications">Notifications</string>
     <string name="freshness_expired"><![CDATA[Expired /> </menu>]]></string>
     <string name="freshness_almost_expired">Almost Expired</string>
     <string name="freshness_all">All</string>
+    <string name="title_activity_item">ItemActivity</string>
 </resources>

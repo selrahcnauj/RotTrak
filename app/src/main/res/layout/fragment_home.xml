@@ -71,8 +71,6 @@
                 style="@style/Widget.App.Chip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#FFE5FFE0"
-                android:backgroundTint="#FFE5FFE0"
                 android:text="Uncategorized"
                 android:textAppearance="@style/ChipCategoryFont"
                 android:textColor="#FF737373" />
@@ -103,6 +101,25 @@
                 android:text="Live Stock"
                 android:textAppearance="@style/ChipCategoryFont"
                 android:textColor="#FFA5512D" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip9"
+                style="@style/Widget.App.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Snacks"
+                android:textAppearance="@style/ChipCategoryFont"
+                android:textColor="#FFA3A52D" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip11"
+                style="@style/Widget.App.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cosmetics"
+                android:textAppearance="@style/ChipCategoryFont"
+                android:textColor="#FF2D88A5" />
+
         </com.google.android.material.chip.ChipGroup>
 
     </HorizontalScrollView>
@@ -123,6 +140,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Freshness" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

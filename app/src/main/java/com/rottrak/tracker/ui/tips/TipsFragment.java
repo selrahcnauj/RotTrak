@@ -1,5 +1,7 @@
 package com.rottrak.tracker.ui.tips;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.cardview.widget.CardView;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.os.Bundle;
@@ -13,12 +15,17 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.rottrak.tracker.MainActivity;
 import com.rottrak.tracker.R;
+import com.rottrak.tracker.databinding.FragmentHomeBinding;
+import com.rottrak.tracker.databinding.FragmentTipsBinding;
 
 public class TipsFragment extends Fragment {
 
     private TipsViewModel mViewModel;
     private FloatingActionButton fab;
+    private CardView TipsFruits;
+    private FragmentTipsBinding binding;
 
     public static TipsFragment newInstance() {
         return new TipsFragment();
@@ -27,10 +34,28 @@ public class TipsFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
+        binding = FragmentTipsBinding.inflate(inflater, container, false);
+        View root = binding.getRoot();
+
         fab = getActivity().findViewById(R.id.fabMain);
         fab.hide();
 
-        return inflater.inflate(R.layout.fragment_tips, container, false);
+        TipsFruits = binding.TipsFruits;
+
+        TipsFruits.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(), R.style.AlertDialog_Fullscreen);
+
+
+                    View mView = getLayoutInflater().inflate(R.layout.dialog_tips_item, null);
+                    builder.setView(mView);
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+            }
+        });
+
+        return root;
     }
 
     /*@Override

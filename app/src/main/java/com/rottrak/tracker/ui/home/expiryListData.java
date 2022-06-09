@@ -4,17 +4,20 @@ import java.util.Date;
 
 public class expiryListData {
     String name;
+    int quantity;
     String date;
     String description;
-    String imageUrl;
+    int imageUrl;
     String category;
 
     expiryListData(String name,
+                   int quantity,
                    String date,
                    String description,
-                   String imageUrl,
+                   int imageUrl,
                    String category){
         this.name = name;
+        this.quantity = quantity;
         this.date = date;
         this.description = description;
         this.imageUrl = imageUrl;
@@ -29,7 +32,11 @@ public class expiryListData {
         return date;
     }
 
-    public String getImageUrl(){
+    public String getDescription() {return description;}
+
+    public int getQuantity() { return quantity; }
+
+    public int getImageUrl(){
         return imageUrl;
     }
 

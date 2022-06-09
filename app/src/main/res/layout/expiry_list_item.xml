@@ -24,31 +24,62 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:gravity="center"
+        android:gravity="center|left"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/txt_item_title"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:text="Product Name"
-            android:textAppearance="@style/ListTitle"
-            tools:text="Product Name" />
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Product Name"
+                android:textAppearance="@style/ListTitle"
+                tools:text="Product Name" />
+
+            <LinearLayout
+                android:id="@+id/linear_item_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/layout_list_item_quantity_rounded"
+                android:backgroundTintMode="add"
+                android:orientation="horizontal"
+                android:paddingLeft="4dp"
+                android:paddingTop="3dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="3dp">
+
+                <TextView
+                    android:id="@+id/txt_item_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1x"
+                    android:textAppearance="@style/ListQuantity" />
+            </LinearLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:layout_marginBottom="4dp"
+            android:gravity="left|center_vertical"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/img_item_estimated"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
                 android:scaleType="fitCenter"
-                tools:srcCompat="@drawable/ic_clock_alert_red_24px" />
+
+                android:src="@drawable/ic_clock_alert_red_24px"/>
 
             <TextView
                 android:id="@+id/txt_item_estimated"
@@ -60,7 +91,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/txt_item_date"
+            android:id="@+id/txt_item_subtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -77,10 +108,11 @@
         android:dividerPadding="8dp"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        android:gravity="right|center_vertical"
+        android:gravity="center|right"
         android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/linear_item_category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
@@ -98,17 +130,27 @@
                 android:layout_height="wrap_content"
                 android:text="Category"
                 android:textAppearance="@style/ListCategory" />
+
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/imgItem"
+
+        <androidx.cardview.widget.CardView
             android:layout_width="79dp"
             android:layout_height="49dp"
             android:layout_marginTop="4dp"
-            android:background="@drawable/layout_list_item"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:cardMaxElevation="0dp">
 
-            android:scaleType="centerCrop"
-            android:visibility="visible"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            <ImageView
+                android:id="@+id/imgItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/layout_list_item"
+
+                android:scaleType="centerCrop"
+                android:visibility="visible" />
+        </androidx.cardview.widget.CardView>
+
     </LinearLayout>
 </LinearLayout>
